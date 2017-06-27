@@ -1,9 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TranslateApp.Vision" Title="Custom Vision">
     <StackLayout Margin="20" Orientation="Vertical">
-        <Button Text="Take Photo and Analyze" Clicked="loadCamera" />
+        <Button Text="Get Text from Picture" Clicked="loadCamera" />
         <StackLayout Orientation="Horizontal">
-            <Label LineBreakMode="WordWrap" x:Name="TagLabel">
+
+            <ActivityIndicator Grid.Row="7" Grid.Column="6" x:Name="loading"  />
+            <Label Grid.Row="6" Grid.Column="1" FontSize="Large" LineBreakMode="WordWrap" x:Name="TagLabel">
+            
+            
             </Label>
           
         </StackLayout>

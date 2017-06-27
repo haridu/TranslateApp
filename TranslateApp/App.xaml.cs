@@ -8,7 +8,7 @@ namespace TranslateApp
         {
             InitializeComponent();
 
-            MainPage = new TranslateAppPage();
+            MainPage = new Login();
         }
 
         protected override void OnStart()

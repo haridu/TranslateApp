@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TranslateApp.Login" Title="Information">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Login" />
+            <Grid>
+                <Entry x:Name="username"  Placeholder="Username"/>
+                </Grid>
+
+            <Grid>
+                <Entry x:Name="password"  IsPassword="true" Placeholder="Password" />
+            </Grid>
+            <Grid>
+                <Label x:Name="noticelabel"  Text="{Binding notice}"  />
+            </Grid>
+
+            <Button Text="Login" TextColor="White" BackgroundColor="DarkBlue" Clicked="Login_ClickedAsync" />
+           
+            <ActivityIndicator x:Name="loading" IsRunning="false" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

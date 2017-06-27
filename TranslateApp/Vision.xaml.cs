@@ -40,8 +40,9 @@ namespace TranslateApp
             if (file == null)
                 return;
 
-           
 
+
+           
             await GettextfromImage(file);
         }
 
@@ -60,6 +61,7 @@ namespace TranslateApp
 
         async Task GettextfromImage(MediaFile file)
         {
+            loading.IsRunning = true;
 
             TagLabel.Text = "";
             var client = new HttpClient();
@@ -112,8 +114,7 @@ namespace TranslateApp
 
                     JObject rss = JObject.Parse(contentString);
 
-                    TagLabel.Text += contentString;
-                
+                                   
 
                     VisualtextJson.RootObject rootObject;
                     rootObject = JsonConvert.DeserializeObject<VisualtextJson.RootObject>(contentString);
@@ -136,6 +137,7 @@ namespace TranslateApp
                     TagLabel.Text += "its not working";
                 }
 
+                loading.IsRunning = false;
                 //Get rid of file once we have finished using it
                 file.Dispose();
             }

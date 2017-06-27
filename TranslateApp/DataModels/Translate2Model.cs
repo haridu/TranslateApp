@@ -9,12 +9,12 @@ namespace TranslateApp
         public string ID { get; set; }
 
         [JsonProperty(PropertyName = "username")]
-        public float Longitude { get; set; }
+        public string username { get; set; }
 
         [JsonProperty(PropertyName = "password")]
-        public float Latitude { get; set; }
+        public string password { get; set; }
 
-        public string City { get; set; }
+       
 
     }
 }
