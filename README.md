@@ -17,4 +17,5 @@ Image translation - Handwritten text translation
 <h3>Author - Harindu </h3>
 
 
-
+<h3>Credits</h3>
+ www.realtimetext.org for fast to text icon.
