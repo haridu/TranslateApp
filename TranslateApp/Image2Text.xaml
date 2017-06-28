@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="TranslateApp.Image2Text" Title="Image2Text">
+    <StackLayout Margin="20" Orientation="Vertical">
+
+
+
+        <StackLayout>
+            <Label Text="Text settings"  FontSize="Default" HorizontalOptions="Center" />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HeightRequest="50" BackgroundColor="White" Padding="10">
+            <StackLayout  Orientation="Horizontal" HorizontalOptions="Start">
+
+                <Label Text="Handrwitten text"  FontSize="Large" HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                <Switch x:Name="Handwritten"    IsToggled="True"  HorizontalOptions="StartAndExpand" VerticalOptions="Center" />
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout>
+            <Button Text="Get Text from Picture" Clicked="loadCamera" />
+        </StackLayout>
+
+
+        <StackLayout>
+            <ActivityIndicator IsRunning="False"  x:Name="loading"  />
+        </StackLayout>
+
+
+        <StackLayout BackgroundColor="White">
+            <Label  IsVisible="False" FontSize="Large" LineBreakMode="WordWrap" x:Name="ResultLabel"/>
+        </StackLayout>
+
+
+        <StackLayout>
+           <!-- <Image x:Name="image" Aspect="AspectFit"/> -->
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -5,21 +5,29 @@
     </ContentPage.Padding>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Login" />
-            <Grid>
-                <Entry x:Name="username"  Placeholder="Username"/>
-                </Grid>
 
-            <Grid>
-                <Entry x:Name="password"  IsPassword="true" Placeholder="Password" />
-            </Grid>
-            <Grid>
-                <Label x:Name="noticelabel"  Text="{Binding notice}"  />
-            </Grid>
 
-            <Button Text="Login" TextColor="White" BackgroundColor="DarkBlue" Clicked="Login_ClickedAsync" />
+
+            <StackLayout>
+                <Label Text="Login" FontSize="Large"  HorizontalOptions="Center" />
+            </StackLayout>
+            <StackLayout HeightRequest="150">
+              <!--  <Image Source="fasttext.png" HeightRequest="190" />-->
+                </StackLayout>
+            <ActivityIndicator x:Name="loading" IsRunning="false"  />
+            <StackLayout>
+                <Entry x:Name="username"  Placeholder="Username" />
+            </StackLayout>
+            <StackLayout>
+                <Entry x:Name="password"  IsPassword="true" Placeholder="Password"   />
+            </StackLayout>
+            <StackLayout>
+                <Label x:Name="noticelabel"  Text="{Binding notice}"   />
+            </StackLayout>
+            <StackLayout>
+                <Button Text="Login" TextColor="White" BackgroundColor="DarkBlue" Clicked="Login_ClickedAsync"   />
+            </StackLayout>
            
-            <ActivityIndicator x:Name="loading" IsRunning="false" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

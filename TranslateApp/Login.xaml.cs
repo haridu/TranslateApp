@@ -32,7 +32,7 @@ namespace TranslateApp
                     if (password.Text == model.password)
                     {
 
-                        await Navigation.PushModalAsync(new Vision());
+                        await Navigation.PushModalAsync(new Image2Text());
                        
 
                     }
