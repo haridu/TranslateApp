@@ -5,14 +5,14 @@ using Microsoft.WindowsAzure.MobileServices;
 
 namespace TranslateApp
 {
-	public class AzureManager
+	public class AzureLoginTableManager
 	{
 
-		private static AzureManager instance;
+		private static AzureLoginTableManager instance;
 		private MobileServiceClient client;
 		private IMobileServiceTable<Translate2Model> Translate2Table;
 
-		private AzureManager()
+        private AzureLoginTableManager()
 		{
 			this.client = new MobileServiceClient("https://module2translate.azurewebsites.net");
             this.Translate2Table = this.client.GetTable<Translate2Model>();
@@ -23,13 +23,13 @@ namespace TranslateApp
 			get { return client; }
 		}
 
-		public static AzureManager AzureManagerInstance
+		public static AzureLoginTableManager AzureManagerInstance
 		{
 			get
 			{
 				if (instance == null)
 				{
-					instance = new AzureManager();
+					instance = new AzureLoginTableManager();
 				}
 
 				return instance;

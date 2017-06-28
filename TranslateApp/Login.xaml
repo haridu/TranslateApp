@@ -4,7 +4,7 @@
         <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
     </ContentPage.Padding>
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout BackgroundColor="White">
 
 
 
@@ -12,8 +12,10 @@
                 <Label Text="Login" FontSize="Large"  HorizontalOptions="Center" />
             </StackLayout>
             <StackLayout HeightRequest="150">
-              <!--  <Image Source="fasttext.png" HeightRequest="190" />-->
-                </StackLayout>
+                <Image HeightRequest="150" Source="fasttext.png"/>
+            </StackLayout>
+
+            
             <ActivityIndicator x:Name="loading" IsRunning="false"  />
             <StackLayout>
                 <Entry x:Name="username"  Placeholder="Username" />
@@ -25,7 +27,7 @@
                 <Label x:Name="noticelabel"  Text="{Binding notice}"   />
             </StackLayout>
             <StackLayout>
-                <Button Text="Login" TextColor="White" BackgroundColor="DarkBlue" Clicked="Login_ClickedAsync"   />
+                <Button Text="Login"  FontSize="Large" TextColor="White" BackgroundColor="DarkCyan" Clicked="Login_ClickedAsync"   />
             </StackLayout>
            
         </StackLayout>

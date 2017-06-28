@@ -8,8 +8,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslateApp.iOS", "iOS\Tra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslateApp.Droid", "Droid\TranslateApp.Droid.csproj", "{F613E1D0-1E93-496E-BCFF-67BE29E9C5B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslateApp.UITests", "UITests\TranslateApp.UITests.csproj", "{5679058C-8575-467C-83B7-0BFEB4027D14}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,17 +55,6 @@ Global
 		{F613E1D0-1E93-496E-BCFF-67BE29E9C5B8}.Release|iPhone.Build.0 = Release|Any CPU
 		{F613E1D0-1E93-496E-BCFF-67BE29E9C5B8}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{F613E1D0-1E93-496E-BCFF-67BE29E9C5B8}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
-		{5679058C-8575-467C-83B7-0BFEB4027D14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5679058C-8575-467C-83B7-0BFEB4027D14}.Debug|iPhone.ActiveCfg = Debug|Any CPU
-		{5679058C-8575-467C-83B7-0BFEB4027D14}.Debug|iPhone.Build.0 = Debug|Any CPU
-		{5679058C-8575-467C-83B7-0BFEB4027D14}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
-		{5679058C-8575-467C-83B7-0BFEB4027D14}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
-		{5679058C-8575-467C-83B7-0BFEB4027D14}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5679058C-8575-467C-83B7-0BFEB4027D14}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5679058C-8575-467C-83B7-0BFEB4027D14}.Release|iPhone.ActiveCfg = Release|Any CPU
-		{5679058C-8575-467C-83B7-0BFEB4027D14}.Release|iPhone.Build.0 = Release|Any CPU
-		{5679058C-8575-467C-83B7-0BFEB4027D14}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
-		{5679058C-8575-467C-83B7-0BFEB4027D14}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

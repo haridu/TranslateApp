@@ -19,7 +19,7 @@
         </StackLayout>
 
         <StackLayout>
-            <Button Text="Get Text from Picture" Clicked="loadCamera" />
+            <Button FontSize="Large" TextColor="White" BackgroundColor="DarkCyan" Text="Get Text from Picture" Clicked="loadCamera" />
         </StackLayout>
 
 
